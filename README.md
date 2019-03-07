@@ -1,18 +1,27 @@
 # spasm
 An assembler for the epRISC platform
-copyright John C Lemme, 2016-2018 (jclemme at proportionallabs dot com)
 
-===============================
+copyright John Lemme, 2016-2018 (jclemme at proportionallabs dot com)
 
-build dependencies
-------------------
+---
+
+## what can it do
+* assembles code for epRISC platforms
+* supports preprocessor defines, strings, relative positioning, local labels, etc.
+* exports to binary files and verilog arrays
+* generates debug files with full source vs. binary listings
+
+## how to use
+call `spasm -o output.bin input.asm` to assemble input.asm into output.bin
+add `-g` flag to generate a debug file as output.bin.dbg
+call `spasm --help` for all options
+
+## build dependencies
 * g++
 * make
 * libboost
 
-
-build instructions
-------------------
+## build instructions
 1. obtain this source tree
 2. install dependencies
 3. run "make"
