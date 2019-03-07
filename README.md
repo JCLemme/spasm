@@ -13,7 +13,9 @@ copyright John Lemme, 2016-2018 (jclemme at proportionallabs dot com)
 
 ## how to use
 call `spasm -o output.bin input.asm` to assemble input.asm into output.bin
+
 add `-g` flag to generate a debug file as output.bin.dbg
+
 call `spasm --help` for all options
 
 ## build dependencies
